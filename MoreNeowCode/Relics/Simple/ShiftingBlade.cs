@@ -43,7 +43,7 @@ public class ShiftingBlade : MoreNeowRelic
        //    return;
        //CardModel card = list[0];
        
-       CardModel card = Owner.RunState.CreateCard(GetStrikeForCharacter(this.Owner.Character), this.Owner);
+       /*CardModel card = Owner.RunState.CreateCard(GetStrikeForCharacter(this.Owner.Character), this.Owner);
        if (card != null)
        {
            if (ModelDb.Enchantment<Unstable>().CanEnchant(card))
@@ -53,6 +53,18 @@ public class ShiftingBlade : MoreNeowRelic
                if (instance != null)
                    instance.GlobalUi.CardPreviewContainer.AddChildSafely((Node)NCardEnchantVfx.Create(card)!);
                CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(card, PileType.Deck));
+           }
+       }*/
+       
+       CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.EnchantSelectionPrompt, 1);
+       foreach (CardModel card in (await CardSelectCmd.FromDeckForEnchantment(Owner, ModelDb.Enchantment<Unstable>(), 1, prefs)).ToList<CardModel>())
+       {
+           if (ModelDb.Enchantment<Unstable>().CanEnchant(card))
+           {
+               CardCmd.Enchant<Unstable>(card, 1M);
+               NRun? instance = NRun.Instance;
+               if (instance != null)
+                   instance.GlobalUi.CardPreviewContainer.AddChildSafely((Node) NCardEnchantVfx.Create(card)!);
            }
        }
     }

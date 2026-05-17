@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Runs;
 using MegaCrit.Sts2.Core.Saves.Runs;
@@ -54,7 +55,7 @@ public class IronCrown : MoreNeowRelic
         }
         else
         {
-            if (options.Count <= 0)
+            /*if (options.Count <= 0)
                 return false;
             if (options.Count == 1)
             {
@@ -64,6 +65,7 @@ public class IronCrown : MoreNeowRelic
             {
                 options.RemoveRange(0, 2);
             }
+            */
             return true;
         }
     }
@@ -73,7 +75,29 @@ public class IronCrown : MoreNeowRelic
         this.ActiveAct = this.Owner.RunState.CurrentActIndex;
         return Task.CompletedTask;
     }
-    
+
+    public override bool TryModifyRewards(Player player, List<Reward> rewards, AbstractRoom? room)
+    {
+        if (this.Owner != player || ActiveAct != Owner.RunState.CurrentActIndex)
+            return false;
+        List<Reward> toRemove = new();
+        foreach (Reward reward in rewards)
+        {
+            if (reward.GetType() == typeof(GoldReward))
+            {
+                toRemove.Add(reward);
+            }
+        }
+        foreach (Reward reward in toRemove)
+        {
+            if (reward.GetType() == typeof(GoldReward))
+            {
+                rewards.Remove(reward);
+            }
+        }
+        return true;
+    }
+
     public override Task AfterRoomEntered(AbstractRoom _)
     {
         //this.Status = this.ActiveAct == this.Owner.RunState.CurrentActIndex ? RelicStatus.Normal : RelicStatus.Disabled;

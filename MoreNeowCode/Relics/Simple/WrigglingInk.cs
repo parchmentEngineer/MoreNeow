@@ -23,7 +23,7 @@ public class WrigglingInk : MoreNeowRelic
 
     public async override Task AfterObtained()
     {
-        CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.EnchantSelectionPrompt, 1);
+        CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.EnchantSelectionPrompt, 2);
         foreach (CardModel card in (await CardSelectCmd.FromDeckForEnchantment(Owner, ModelDb.Enchantment<Steady>(), 1, prefs)).ToList<CardModel>())
         {
             if (ModelDb.Enchantment<Steady>().CanEnchant(card))
