@@ -18,7 +18,7 @@ namespace MoreNeow.MoreNeowCode.Cards.AltStarters;
 public class IroncladSkill : MoreNeowCard
 {
     public IroncladSkill() : base(2, CardType.Skill, CardRarity.Basic, TargetType.Self) { }
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(4m, ValueProp.Move), new PowerVar<BrawlPower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(3m, ValueProp.Move), new PowerVar<BrawlPower>(1)];
     //protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<BrawlPower>()];
     
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
@@ -27,7 +27,6 @@ public class IroncladSkill : MoreNeowCard
         await PowerCmd.Apply<BrawlPower>(choiceContext, Owner.Creature, DynamicVars["BrawlPower"].BaseValue, Owner.Creature, this);
     }
     
-    //protected override void OnUpgrade() => DynamicVars.Block.UpgradeValueBy(3);
-    protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);
-    //Check interaction with
+    protected override void OnUpgrade() => DynamicVars.Block.UpgradeValueBy(4);
+    //protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);
 }

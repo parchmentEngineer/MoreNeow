@@ -25,7 +25,7 @@ public class LumenPower : MoreNeowPower
         if (power != this || Owner.Player is null || Amount < 2) return;
         Flash();
         Player player = Owner.Player;
-        await CardPileCmd.AddGeneratedCardsToCombat(CardFactory.GetDistinctForCombat(player, ModelDb.CardPool<ColorlessCardPool>().GetUnlockedCards(player.UnlockState, player.RunState.CardMultiplayerConstraint), 1, player.RunState.Rng.CombatCardGeneration).ToList<CardModel>(), PileType.Hand, Owner.Player);
+        await CardPileCmd.AddGeneratedCardsToCombat(CardFactory.GetDistinctForCombat(player, ModelDb.CardPool<ColorlessCardPool>().GetUnlockedCards(player.UnlockState, player.RunState.CardMultiplayerConstraint).Where(c => c.Type == CardType.Attack), 1, player.RunState.Rng.CombatCardGeneration).ToList(), PileType.Hand, Owner.Player);
         await PowerCmd.ModifyAmount(choiceContext, this, -2, null, null);
     }
 

@@ -19,7 +19,7 @@ namespace MoreNeow.MoreNeowCode.Cards.Scrapped;
 public class NecrobinderAttack : MoreNeowCard
 {
     public NecrobinderAttack() : base(1, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy) { }
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new OstyDamageVar(5M, ValueProp.Move), new DynamicVar("HealthTarget", 10)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new OstyDamageVar(6M, ValueProp.Move), new DynamicVar("HealthTarget", 10)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromCard<Soul>()];
     
     protected override bool ShouldGlowRedInternal => this.Owner.IsOstyMissing;

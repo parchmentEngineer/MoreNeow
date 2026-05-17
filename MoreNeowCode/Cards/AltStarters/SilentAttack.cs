@@ -18,7 +18,7 @@ namespace MoreNeow.MoreNeowCode.Cards.AltStarters;
 public class SilentAttack : MoreNeowCard
 {
     public SilentAttack() : base(1, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy) { }
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4m, ValueProp.Move), new PowerVar<ShivNextTurnPower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5m, ValueProp.Move), new PowerVar<ShivNextTurnPower>(1)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromCard<Shiv>()];
     
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)

@@ -17,7 +17,7 @@ namespace MoreNeow.MoreNeowCode.Cards.Scrapped;
 public class DefectSkill : MoreNeowCard
 {
     public DefectSkill() : base(1, CardType.Skill, CardRarity.Basic, TargetType.Self) { }
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6m, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7m, ValueProp.Move)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromCard<Slimed>()];
     
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)

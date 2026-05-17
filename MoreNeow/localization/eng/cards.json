@@ -15,7 +15,7 @@
   "MORENEOW-SILENT_ATTACK.title": "Blade Arc",
   "MORENEOW-SILENT_ATTACK.description": "Deal {Damage:diff()} damage.\nNext turn, add {ShivNextTurnPower:diff()} [gold]Shiv[/gold] into your hand.",
   "MORENEOW-SILENT_SKILL.title": "Ready",
-  "MORENEOW-SILENT_SKILL.description": "Gain 1 [gold]Block[/gold] for each card in your hand.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
+  "MORENEOW-SILENT_SKILL.description": "Gain {ExtraBlock:diff()} [gold]Block[/gold], plus 1 additional [gold]Block[/gold] for each other card in your hand.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
 
   "MORENEOW-NECROBINDER_ATTACK_SCRAPPED.title": "Harvest",
   "MORENEOW-NECROBINDER_ATTACK_SCRAPPED.description": "Deal {Damage:diff()} damage.\nIncrease this card's damage by 1 this combat and give it [gold]Ethereal[/gold].",

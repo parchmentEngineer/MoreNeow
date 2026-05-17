@@ -18,7 +18,7 @@ namespace MoreNeow.MoreNeowCode.Cards.AltStarters;
 public class NecrobinderSkill : MoreNeowCard
 {
     public NecrobinderSkill() : base(1, CardType.Skill, CardRarity.Basic, TargetType.Self) { }
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(2M, ValueProp.Move), new SummonVar(2M), new HealVar(2M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(2M, ValueProp.Move), new SummonVar(3M), new HealVar(2M)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(StaticHoverTip.SummonDynamic, DynamicVars.Summon)];
     
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
