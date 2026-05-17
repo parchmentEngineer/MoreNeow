@@ -1,0 +1,12 @@
+{
+  "id": "MoreNeow",
+  "name": "More Neow",
+  "author": "parchmentEngineer",
+  "description": "Adds 12 new relics to Neow's pool",
+  "version": "v1.0.0",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": [{"id": "BaseLib", "min_version": "3.1.2"}],
+  "min_game_version": "0.105.0",
+  "affects_gameplay": true
+}

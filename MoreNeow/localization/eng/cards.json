@@ -1,0 +1,54 @@
+{
+  "MORENEOW-NEOWS_REBIRTH.title": "Neow's Rebirth",
+  "MORENEOW-NEOWS_REBIRTH.description": "At the end of combat, you may transform a card in your [gold]Deck[/gold].\nRemoved from your [gold]Deck[/gold] after {Combats:diff()} combats.",
+  
+  "MORENEOW-REGENT_ATTACK_SCRAPPED.title": "Astral Flux",
+  "MORENEOW-REGENT_ATTACK_SCRAPPED.description": "Deal {Damage:diff()} damage.\nNext turn, gain {Stars:starIcons()}.",
+  "MORENEOW-REGENT_SKILL_SCRAPPED.title": "Heaven's Gaze",
+  "MORENEOW-REGENT_SKILL_SCRAPPED.description": "Gain {Block:diff()} [gold]Block[/gold].\nApply {WeakPower:diff()} [gold]Weak[/gold] and {VulnerablePower:diff()} [gold]Vulnerable[/gold] to all enemies.",
+
+  "MORENEOW-REGENT_ATTACK.title": "Lens Flare",
+  "MORENEOW-REGENT_ATTACK.description": "Deal {Damage:diff()} damage.\nGain {LumenPower:diff()} [gold]Lumen[/gold].",
+  "MORENEOW-REGENT_SKILL.title": "Reform",
+  "MORENEOW-REGENT_SKILL.description": "Gain {Block:diff()} [gold]Block[/gold].\nWhenever you create a card, reduce this card's cost to 0 {energyPrefix:energyIcons(1)} this turn.",
+
+  "MORENEOW-SILENT_ATTACK.title": "Blade Arc",
+  "MORENEOW-SILENT_ATTACK.description": "Deal {Damage:diff()} damage.\nNext turn, add {ShivNextTurnPower:diff()} [gold]Shiv[/gold] into your hand.",
+  "MORENEOW-SILENT_SKILL.title": "Ready",
+  "MORENEOW-SILENT_SKILL.description": "Gain 1 [gold]Block[/gold] for each card in your hand.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
+
+  "MORENEOW-NECROBINDER_ATTACK_SCRAPPED.title": "Harvest",
+  "MORENEOW-NECROBINDER_ATTACK_SCRAPPED.description": "Deal {Damage:diff()} damage.\nIncrease this card's damage by 1 this combat and give it [gold]Ethereal[/gold].",
+  "MORENEOW-NECROBINDER_SKILL_SCRAPPED.title": "Fleeting Light",
+  "MORENEOW-NECROBINDER_SKILL_SCRAPPED.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you have no [gold]Souls[/gold] in your [gold]Exhaust Pile[/gold], add a [gold]Soul[/gold] into your [gold]Draw Pile[/gold].",
+
+  "MORENEOW-IRONCLAD_ATTACK_SCRAPPED.title": "Puncture",
+  "MORENEOW-IRONCLAD_ATTACK_SCRAPPED.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\nLose 1 HP for each card played this turn (including this card).{InCombat:\n(Lose {CalculatedHPLoss:diff()} HP)|}",
+  "MORENEOW-IRONCLAD_SKILL_SCRAPPED.title": "Brace",
+  "MORENEOW-IRONCLAD_SKILL_SCRAPPED.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {Block:diff()} [gold]Posture[/gold].",
+
+  "MORENEOW-IRONCLAD_ATTACK.title": "Combo Strike",
+  "MORENEOW-IRONCLAD_ATTACK.description": "Deal {Damage:diff()} damage.\nIf this is the third attack you played this turn, gain {VigorPower:diff()} [gold]Vigor[/gold].",
+  "MORENEOW-IRONCLAD_SKILL.title": "Brawl",
+  "MORENEOW-IRONCLAD_SKILL.description": "Gain {Block:diff()} [gold]Block[/gold].\nThe next time you play an attack, gain [gold]Block[/gold] equal to the damage it deals.",
+
+  "MORENEOW-DEFECT_ATTACK_SCRAPPED.title": "Echo",
+  "MORENEOW-DEFECT_ATTACK_SCRAPPED.description": "Deal {Damage:diff()} damage.\nIf you [gold]Evoked[/gold] an Orb this turn, hits twice.\nAdd a [gold]Dazed[/gold] into your [gold]Discard Pile[/gold].",
+  "MORENEOW-DEFECT_SKILL_SCRAPPED.title": "Recursion",
+  "MORENEOW-DEFECT_SKILL_SCRAPPED.description": "[gold]Evoke[/gold] your rightmost Orb.\n[gold]Channel[/gold] the Orb that was just [gold]Evoked[/gold].",
+  "MORENEOW-DEFECT_POWER_SCRAPPED.title": "Iceberg",
+  "MORENEOW-DEFECT_POWER_SCRAPPED.description": "[gold]Channel[/gold] 1 [gold]Frost[/gold].\nWhenever you [gold]Evoke Frost[/gold], gain {IcebergPower:diff()} [gold]Block[/gold] next turn.",
+
+  "MORENEOW-DEFECT_ATTACK.title": "Polish",
+  "MORENEOW-DEFECT_ATTACK.description": "Deal {Damage:diff()} damage.\nIf you have a [gold]Status[/gold] card in your hand, trigger the passive effect of all Orbs.",
+  "MORENEOW-DEFECT_SKILL.title": "Ooze",
+  "MORENEOW-DEFECT_SKILL.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd a [gold]Slimed[/gold] into your [gold]Discard Pile[/gold].",
+
+  "MORENEOW-NECROBINDER_ATTACK_SCRAPPED2.title": "Ghostly Lash",
+  "MORENEOW-NECROBINDER_ATTACK_SCRAPPED2.description": "Apply {DoomPower:diff()} [gold]Doom[/gold].\nAdd [gold]Ethereal[/gold] to this card.",
+
+  "MORENEOW-NECROBINDER_ATTACK.title": "Nudge",
+  "MORENEOW-NECROBINDER_ATTACK.description": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nIf [gold]Osty[/gold] has 10 or more HP, add a [gold]Soul[/gold] into your [gold]Draw Pile[/gold].",
+  "MORENEOW-NECROBINDER_SKILL.title": "Reinforce",
+  "MORENEOW-NECROBINDER_SKILL.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Summon[/gold] {Summon:diff()}.\n[gold]Osty[/gold] heals {Heal:diff()} HP."
+}

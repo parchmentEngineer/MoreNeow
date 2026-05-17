@@ -1,0 +1,5 @@
+modargo, JohnnyBazooka89 - Coding help with Unfamiliar Deckbox compatability with other mods
+MofuRabbitt - Coding help with rest site display images
+Cany0udance - Coding help with modifying Neow Options (from the Ancient Swap mod)
+Enbeon the Truthseeker - Coding help across various tasks
+Thank you to everyone in the StS2 modding discord for being such a fun community to work with!

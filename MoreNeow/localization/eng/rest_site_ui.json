@@ -1,0 +1,7 @@
+{
+  "OPTION_FEAST.name": "Feast",
+  "OPTION_FEAST.description": "Heal for 100% of your Max HP.\nCan only be used once.",
+
+  "OPTION_PROPAGATE.name": "Propagate",
+  "OPTION_PROPAGATE.description": "[gold]Enchant[/gold] an attack in your [gold]Deck[/gold] with [purple]Serrated[/purple]."
+}

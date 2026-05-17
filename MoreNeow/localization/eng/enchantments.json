@@ -1,0 +1,8 @@
+{
+  "MORENEOW-UNSTABLE.title": "Unstable",
+  "MORENEOW-UNSTABLE.description": "Whenever you add a card to your [gold]Deck[/gold], transform this card into a copy of that card (keeping this enchantment)",
+
+  "MORENEOW-SERRATED.title": "Serrated",
+  "MORENEOW-SERRATED.description": "This card applies 2 [gold]Vulnerable[/gold] and gains [gold]Exhaust[/gold].",
+  "MORENEOW-SERRATED.extraCardText": "Apply [blue]2[/blue] [gold]Vulnerable[/gold]{TargetType:choose(AllEnemies): to ALL enemies|}."
+}
