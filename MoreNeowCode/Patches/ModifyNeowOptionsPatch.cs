@@ -51,9 +51,9 @@ public class ModifyNeowOptionsPatch
         IEnumerable<EventOption> allCustomOptions = customSimpleOptions.Concat(customComplexOptions);
         allCustomOptions.AddItem(RelicOption<UnfamiliarDeckbox>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow));
         
-        bool alwaysOfferNewOption = false;
-        bool alwaysOfferDeckbox = true;
-        bool onlyOfferNewOptions = true;
+        bool alwaysOfferNewOption = MoreNeowConfig.AlwaysOfferNewOption;
+        bool alwaysOfferDeckbox = MoreNeowConfig.AlwaysOfferDeckbox;
+        bool onlyOfferNewOptions = MoreNeowConfig.OnlyOfferNewOptions;
 
         if (onlyOfferNewOptions)
         {

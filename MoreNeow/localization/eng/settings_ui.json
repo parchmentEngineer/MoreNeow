@@ -1,0 +1,9 @@
+{
+  "MORENEOW.mod_title": "More Neow",
+  "MORENEOW-ALWAYS_OFFER_NEW_OPTION.title": "Always Offer a New Option",
+  "MORENEOW-ALWAYS_OFFER_NEW_OPTION.hover.desc": "Ensures that at least one Neow option will be a new relic added by this mod.",
+  "MORENEOW-ALWAYS_OFFER_DECKBOX.title": "Always Offer Unfamiliar Deckbox",
+  "MORENEOW-ALWAYS_OFFER_DECKBOX.hover.desc": "Ensures that the Unfamiliar Deckbox will always be offered by Neow.",
+  "MORENEOW-ONLY_OFFER_NEW_OPTIONS.title": "Only Offer New Options",
+  "MORENEOW-ONLY_OFFER_NEW_OPTIONS.hover.desc": "Forces all Neow options to be new relics added by this mod."
+}

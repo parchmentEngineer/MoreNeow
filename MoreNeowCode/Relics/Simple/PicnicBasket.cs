@@ -32,12 +32,21 @@ public class PicnicBasket : MoreNeowRelic
             this.AssertMutable();
             this._used = value;
             this.InvokeDisplayAmountChanged();
+            this.CheckIfUsedUp();
         }
+    }
+    
+    public void CheckIfUsedUp()
+    {
+        if (!this.IsUsedUp)
+            return;
+        this.Status = RelicStatus.Disabled;
     }
     
     public override bool ShowCounter => true;
     public override int DisplayAmount => this.Used ? 0 : 1;
-    
+    public override bool IsUsedUp => this.Used;
+
     public override bool TryModifyRestSiteOptions(Player player, ICollection<RestSiteOption> options)
     {
         if (player != this.Owner || this.Used)

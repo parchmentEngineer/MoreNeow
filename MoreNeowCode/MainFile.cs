@@ -1,3 +1,4 @@
+using BaseLib.Config;
 using Godot;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Modding;
@@ -23,6 +24,8 @@ public partial class MainFile : Node
         Harmony harmony = new(ModId);
 
         harmony.PatchAll();
+        
+        ModConfigRegistry.Register("MoreNeow" ,new MoreNeowConfig());
         
         UnfamiliarDeckbox.AddCharacterDeck(ModelDb.GetId<Ironclad>(), ModelDb.GetId<IroncladAttack>(), ModelDb.GetId<IroncladSkill>());
         UnfamiliarDeckbox.AddCharacterDeck(ModelDb.GetId<Silent>(), ModelDb.GetId<SilentAttack>(), ModelDb.GetId<SilentSkill>());
