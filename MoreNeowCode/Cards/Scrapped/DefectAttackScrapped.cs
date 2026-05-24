@@ -63,7 +63,7 @@ public class DefectAttackScrapped : MoreNeowCard
 
     }
 
-    public override Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+    public override Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
         if (side == this.Owner.Creature.Side)
             EvokedThisTurn = false;

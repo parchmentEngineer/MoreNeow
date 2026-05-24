@@ -30,10 +30,11 @@ public class BrawlPower : MoreNeowPower
         await PowerCmd.Remove(this);
     }
     
-    public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+    /*
+    public override Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
         if (side != CombatSide.Enemy)
             return;
         //await PowerCmd.Remove(this);
-    }
+    }*/
 }

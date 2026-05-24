@@ -65,13 +65,20 @@ public class IroncladAttack : MoreNeowCard
         AttacksPlayedThisTurn += 1;
         return Task.CompletedTask;
     }
-    
-    public override Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+
+    public override Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
         if (side == this.Owner.Creature.Side)
             AttacksPlayedThisTurn = 0;
         return Task.CompletedTask;
     }
+
+    /*public override Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+    {
+        if (side == this.Owner.Creature.Side)
+            AttacksPlayedThisTurn = 0;
+        return Task.CompletedTask;
+    }*/
     
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(3M);
 }

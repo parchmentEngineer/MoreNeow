@@ -1,4 +1,7 @@
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
@@ -45,7 +48,8 @@ public class ModifyNeowOptionsPatch
         [
             RelicOption<AncientLink>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow),
             RelicOption<SpectersGrin>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow),
-            RelicOption<IronCrown>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow)
+            RelicOption<IronCrown>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow),
+            RelicOption<RegalScepter>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow)
         ];
 
         IEnumerable<EventOption> allCustomOptions = customSimpleOptions.Concat(customComplexOptions);
