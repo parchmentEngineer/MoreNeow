@@ -42,7 +42,8 @@ public class ModifyNeowOptionsPatch
             RelicOption<WindChimes>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow),
             RelicOption<WrigglingInk>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow),
             RelicOption<PicnicBasket>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow),
-            RelicOption<JaggedCoral>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow)
+            RelicOption<JaggedCoral>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow),
+            RelicOption<AntikytheraFragment>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow)
         ];
         IEnumerable<EventOption> customComplexOptions =
         [

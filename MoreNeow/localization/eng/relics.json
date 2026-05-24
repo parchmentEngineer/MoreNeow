@@ -55,6 +55,10 @@
   "MORENEOW-REGAL_SCEPTER.title": "Regal Scepter",
   "MORENEOW-REGAL_SCEPTER.description": "At the start of [gold]Boss[/gold] combats, draw [blue]{Cards}[/blue] additional {Cards:plural:card|cards} and gain {Energy:energyIcons()}. Fight [red]two[/red] bosses at the end of Act 1.",
   "MORENEOW-REGAL_SCEPTER.flavor": "",
+  "MORENEOW-ANTIKYTHERA_FRAGMENT.title": "Antikythera Fragment",
+  "MORENEOW-ANTIKYTHERA_FRAGMENT.description": "Upon pickup, add 5 random Common cards to your [gold]Deck[/gold]",
+  "MORENEOW-ANTIKYTHERA_FRAGMENT.eventDescription": "Add 5 random Common cards to your [gold]Deck[/gold]",
+  "MORENEOW-ANTIKYTHERA_FRAGMENT.flavor": "",
   
   "MORENEOW-CHROMATIC_FRAGMENT.title": "Chromatic Fragment",
   "MORENEOW-CHROMATIC_FRAGMENT.IRONCLAD.title": "Crimson Fragment",
