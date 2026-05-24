@@ -1,7 +1,9 @@
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
+using MegaCrit.Sts2.Core.Events;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -9,8 +11,11 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Cards.Mocks;
 using MegaCrit.Sts2.Core.Models.Characters;
+using MegaCrit.Sts2.Core.Models.Events;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.Nodes.CommonUi;
+using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.TestSupport;
 using MoreNeow.MoreNeowCode.Cards.AltStarters;
 using MoreNeow.MoreNeowCode.Cards.Scrapped;
@@ -35,9 +40,13 @@ public class UnfamiliarDeckbox : MoreNeowRelic
         return CharacterDecks.ContainsKey(character.Id);
     }
     
+    public static IEnumerable<RelicModel> GetValidRelics(Player owner)
+    {
+        return ModelDb.Event<Neow>().AllPossibleOptions.Where(o => o.Relic != null && o.Relic.IsAllowedAtNeow(owner) && !(o.Relic is UnfamiliarDeckbox)).Select((o => o.Relic)).OfType<RelicModel>();
+    }
+    
     public override async Task AfterObtained()
     {
-
         ModelId attackCardId = null;
         ModelId skillCardId = null;
         List<ModelId> starterCards = new();
@@ -125,6 +134,11 @@ public class UnfamiliarDeckbox : MoreNeowRelic
             CardCmd.PreviewCardPileAdd(toPreview, style: CardPreviewStyle.MessyLayout);
             await Cmd.CustomScaledWait(0.1f, 0.2f);
         }
+        
+        List<RelicModel> list1 = GetValidRelics(Owner).ToList();
+        Owner.PlayerRng.Rewards.Shuffle(list1);
+        List<Reward> list2 = list1.Take<RelicModel>(1).Select(relic => new RelicReward(relic, Owner)).ToList<Reward>();
+        await new RewardsSet(Owner).WithCustomRewards(list2).Offer();
     }
     
     private static CardModel GetStrikeForCharacter(CharacterModel character)

@@ -26,6 +26,7 @@ public class AddPositiveNeowOptionsPatch
         options.Add(RelicOption<WrigglingInk>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow));
         options.Add(RelicOption<PicnicBasket>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow));
         options.Add(RelicOption<JaggedCoral>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow));
+        options.Add(RelicOption<AntikytheraFragment>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow));
         __result = options;
     }
     
@@ -69,6 +70,7 @@ public class AddCursedNeowOptionsPatch
         options.Add(RelicOption<AncientLink>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow));
         options.Add(RelicOption<SpectersGrin>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow));
         options.Add(RelicOption<IronCrown>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow));
+        options.Add(RelicOption<RegalScepter>(customDonePage: "NEOW.pages.DONE.POSITIVE.description", neow: neow));
         __result = options;
     }
     
