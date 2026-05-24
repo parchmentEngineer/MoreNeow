@@ -7,8 +7,8 @@ If you have any feedback about any of the relics (either how one performed in a 
 ## Changelog
 
 v1.0.0: First full release (for Slay the Spire beta v0.105.1 / BaseLib v3.1.3), featuring:
-* 8 positive relics: Blue-Tier Membership, Hunter's Guide, Inro, Jagged Coral, Picnic Basket, Shifting Blade, Wind Chimes, Wriggling Ink
-* 3 cursed relics: Ancient Link, Iron Crown, Specter's Grin
+* 9 positive relics: Antikythera Fragment, Blue-Tier Membership, Hunter's Guide, Inro, Jagged Coral, Picnic Basket, Shifting Blade, Wind Chimes, Wriggling Ink
+* 4 cursed relics: Ancient Link, Iron Crown, Regal Scepter, Specter's Grin
 * 1 special relic: Unfamiliar Deckbox
 * 10 alternate starting cards: Combo Strike, Brawl, Blade Arc, Ready, Lens Flare, Reform, Nudge, Reinforce, Polish, Ooze
 
@@ -29,3 +29,11 @@ v1.0.1: Buffed several relics and most alternate starter decks.
   * Buffed **Nudge**: Now deals 6 (9) damage instead of 5 (8).
   * Buffed **Reinforce**: Now Summons 3 (4) instead of 2 (3).
   * Buffed **Ooze**: Now gives 7 (10) Block instead of 6 (9).
+
+v1.0.2: Updated to newest beta, added two relics and one experimental buff.
+* **General**
+  * Updated for beta version 0.106.1
+* **Relics**
+  * Added **Antikythera Fragment**: Add 5 random Common cards to your Deck.
+  * Added **Regal Scepter**: At the start of Boss combats, draw 2 additional cards and gain 2E. Fight two bosses at the end of Act 1.
+  * Buffed **Unfamiliar Deckbox**: Now also gives another random Neow relic when obtained.
