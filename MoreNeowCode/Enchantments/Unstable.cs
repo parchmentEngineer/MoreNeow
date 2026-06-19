@@ -38,8 +38,8 @@ public class Unstable : MoreNeowEnchantment
             return;
         if (newlyAddedCard.Title != Card.Title)
         {
-            CardModel copiedCard =
-                newlyAddedCard.Owner.RunState.CreateCard(newlyAddedCard.CanonicalInstance, newlyAddedCard.Owner);
+            //CardModel copiedCard = newlyAddedCard.Owner.RunState.CreateCard(newlyAddedCard.CanonicalInstance, newlyAddedCard.Owner);
+            CardModel copiedCard = Card.Owner.RunState.CloneCard(newlyAddedCard);
             if (ModelDb.Enchantment<Unstable>().CanEnchant(copiedCard))
             {
                 if (newlyAddedCard.IsUpgraded)

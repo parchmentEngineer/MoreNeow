@@ -4,7 +4,7 @@ using MoreNeow.MoreNeowCode.Extensions;
 
 namespace MoreNeow.MoreNeowCode.Enchantments;
 
-public class MoreNeowEnchantment : CustomEnchantmentModel
+public abstract class MoreNeowEnchantment : CustomEnchantmentModel
 {
     protected override string CustomIconPath => $"{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".RelicImagePath();
 }
